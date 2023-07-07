@@ -5,8 +5,8 @@ their final score in a .csv file. Whenever the program is run it should add to t
 and not overwrite anything.
 """
 
-import random
 import csv
+import random
 
 num_1_1, num_1_2, num_2_1, num_2_2 = [random.randint(1, 99) for _ in range(4)]
 answer_1 = num_1_1 + num_1_2

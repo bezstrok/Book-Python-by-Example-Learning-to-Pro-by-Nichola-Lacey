@@ -25,7 +25,7 @@ author = input("Please enter an author name: ")
 with open("Books.csv", 'r') as f:
 	reader = csv.reader(f)
 	next(reader)
-
+	
 	data = [data for data in reader if data[1] == author]
 
 if data:
@@ -33,4 +33,3 @@ if data:
 		print(*info, sep=' | ')
 else:
 	print("There is no data")
-
